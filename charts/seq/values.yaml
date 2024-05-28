@@ -180,6 +180,7 @@ rbac:
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/#configure-probes
 livenessProbe:
   enabled: true
+  path: /health
   failureThreshold: 3
   initialDelaySeconds: 0
   periodSeconds: 10
